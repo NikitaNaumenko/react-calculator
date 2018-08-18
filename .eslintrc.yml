@@ -1,0 +1,23 @@
+plugins:
+  - babel
+  - react
+
+env:
+  node: true
+  browser: true
+
+parser: babel-eslint
+
+extends:
+  - 'airbnb-base'
+  - 'plugin:react/recommended'
+
+settings:
+  'import/resolver':
+    node:
+      extensions:
+        - '.js'
+        - '.jsx'
+
+rules:
+  no-console: 0
